@@ -17,7 +17,7 @@
         android:layout_marginRight="57dp"
         android:layout_marginBottom="50dp"
         android:onClick="stop"
-        android:text="問題へ"
+        android:text="予定へ"
         tools:layout_editor_absoluteX="176dp"
         tools:layout_editor_absoluteY="448dp" />
 </RelativeLayout>

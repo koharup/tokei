@@ -1,7 +1,11 @@
 package io.picchi.tokei;
 
+import android.annotation.TargetApi;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,6 +20,8 @@ public class AlarmActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer;
 
+    @TargetApi(Build.VERSION_CODES.KITKAT)
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,9 +38,14 @@ public class AlarmActivity extends AppCompatActivity {
         if(mediaPlayer != null){
             audioStop();
         }
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+
     }
 
 
+        @TargetApi(Build.VERSION_CODES.KITKAT)
+        @RequiresApi(api = Build.VERSION_CODES.KITKAT)
         boolean audioSetup(){
         boolean fileCheck = false;
 
@@ -45,8 +56,9 @@ public class AlarmActivity extends AppCompatActivity {
         String filePath = "clockmusic.mp3";
 
         // assetsから mp3 ファイルを読み込み
-        try(AssetFileDescriptor afdescripter = getAssets().openFd(filePath);)
-        {
+            try(AssetFileDescriptor afdescripter = getAssets().openFd(filePath);)
+            {
+
             // MediaPlayerに読み込んだ音楽ファイルを指定
             mediaPlayer.setDataSource(afdescripter.getFileDescriptor(),
                     afdescripter.getStartOffset(),
@@ -62,16 +74,17 @@ public class AlarmActivity extends AppCompatActivity {
         return fileCheck;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     private void audioPlay() {
 
         if (mediaPlayer == null) {
             // audio ファイルを読出し
-            if (audioSetup()){
+            if (!audioSetup
+                    ()) {
+                        Toast.makeText(getApplication(), "Error: read audio file", Toast.LENGTH_SHORT).show();
+                        return;
+                    } else {
                 Toast.makeText(getApplication(), "Rread audio file", Toast.LENGTH_SHORT).show();
-            }
-            else{
-                Toast.makeText(getApplication(), "Error: read audio file", Toast.LENGTH_SHORT).show();
-                return;
             }
         }
         else{

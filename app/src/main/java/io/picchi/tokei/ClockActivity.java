@@ -15,8 +15,8 @@ import java.util.Calendar;
 
 public class ClockActivity extends AppCompatActivity {
 
-    public void ChoiceActivity (View v){
-        Intent intent = new Intent(this,ChoiceActivity.class);
+    public void TodoActivity (View v){
+        Intent intent = new Intent(this, TodoActivity.class);
         startActivity(intent);
     }
 

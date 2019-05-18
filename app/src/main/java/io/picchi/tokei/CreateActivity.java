@@ -10,6 +10,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import io.realm.Realm;
+
 public class CreateActivity extends AppCompatActivity {
 
     //Realm型の変数を宣言

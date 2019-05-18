@@ -9,6 +9,9 @@ import android.widget.ListView;
 
 import java.util.List;
 
+import io.realm.Realm;
+import io.realm.RealmResults;
+
 public class MainActivity extends AppCompatActivity {
 
     public Realm realm;
@@ -30,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Memo memo = (Memo) parent.getItemAtPosition(position);
-                Intent intent = new Intent(ClockActivity.this,DetailActivity.class);
+                Intent intent = new Intent(MainActivity.this,DetailActivity.class);
                 intent.putExtra("updateDate",memo.updateDate);
                 startActivity(intent);
 

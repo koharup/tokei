@@ -35,14 +35,14 @@ public class AlarmActivity extends AppCompatActivity {
 
     public void stop(View v){
 
+
+
         if(mediaPlayer != null){
             audioStop();
         }
-        Intent intent = new Intent(this,MainActivity.class);
-        startActivity(intent);
+
 
     }
-
 
         @TargetApi(Build.VERSION_CODES.KITKAT)
         @RequiresApi(api = Build.VERSION_CODES.KITKAT)

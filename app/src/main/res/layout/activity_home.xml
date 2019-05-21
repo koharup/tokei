@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:onClick="CreateActivity"
+            android:onClick="MainActivity"
             android:text="登録単語"
             android:textColor="@color/colorAccent"
             android:textSize="24sp"

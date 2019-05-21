@@ -9,15 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TodoActivity"></activity>
-        <activity android:name=".TestActivity" />
+        <activity android:name=".TodoActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".CreateActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".AlarmActivity" />
-        <activity android:name=".LastActivity" />
-        <activity android:name=".ChoiceActivity" />
-        <activity android:name=".MemoActivity" />
         <activity android:name=".InfoActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".FirstActivity">

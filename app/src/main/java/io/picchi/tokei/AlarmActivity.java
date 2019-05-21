@@ -29,21 +29,22 @@ public class AlarmActivity extends AppCompatActivity {
         audioPlay();
     }
 
+    public void MainActivity(View v){
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
+
 
 
 
 
     public void stop(View v){
 
-
-
         if(mediaPlayer != null){
             audioStop();
         }
 
-
     }
-
         @TargetApi(Build.VERSION_CODES.KITKAT)
         @RequiresApi(api = Build.VERSION_CODES.KITKAT)
         boolean audioSetup(){

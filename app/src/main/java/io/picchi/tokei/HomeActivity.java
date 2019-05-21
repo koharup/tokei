@@ -20,8 +20,8 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
-    public void ListActivity(View v){
-        Intent intent = new Intent(this, MainActivity.class);
+    public void CreateActivity(View v){
+        Intent intent = new Intent(this, CreateActivity.class);
         startActivity(intent);
     }
 

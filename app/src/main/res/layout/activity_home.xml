@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp"
-        android:scaleType="center"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,8 +53,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
+            android:onClick="CreateActivity"
+            android:text="単語を登録"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="297dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
             android:onClick="MainActivity"
-            android:text="登録単語"
+            android:text="単語一覧"
             android:textColor="@color/colorAccent"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"

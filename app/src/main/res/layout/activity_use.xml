@@ -29,7 +29,7 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="37dp"
-            android:text="①予定を登録する"
+            android:text="①単語を登録する"
             android:textColor="#F2F2F2"
             android:textSize="24sp" />
 
@@ -37,7 +37,7 @@
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="②ドロイド君をタップして保存する"
+            android:text="②アラームをセットする"
             android:textColor="#F2F2F2"
             android:textSize="24dp"/>
 
@@ -45,21 +45,21 @@
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="③戻ってアラームをセットする"
+            android:text="③寝る"
             android:textColor="#F2F2F2"
             android:textSize="24dp"/>
         <TextView
             android:id="@+id/textView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="④寝る"
+            android:text="④朝起きて予定を確認"
             android:textColor="#F2F2F2"
             android:textSize="24dp"/>
         <TextView
             android:id="@+id/textView15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="⑤朝起きて予定を確認"
+            android:text="＊一覧の場所で単語をタップすると変更できるよ"
             android:textColor="#F2F2F2"
             android:textSize="24dp"/>
 
@@ -67,7 +67,7 @@
             android:id="@+id/textView16"
             android:layout_width="match_parent"
             android:layout_height="440dp"
-            android:text="以上！"
+            android:text="＊単語の暗記やスケジュールの管理に使おう！"
             android:textColor="#F2F2F2"
             android:textSize="24dp" />
 

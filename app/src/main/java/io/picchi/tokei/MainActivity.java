@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_clock);
+        setContentView(R.layout.activity_main);
 
         //realmを開く
         realm = Realm.getDefaultInstance();
